@@ -37,14 +37,14 @@ export function NavBar({
           {/* <LocaleChange url={"/"} /> */}
           
 
-          <Button
+            <Button
             className="px-3"
             variant="green"
             size="sm"
-            onClick={() => {}}
-          >
+            onClick={() => window.open("http://fiscitzw.com/", "_blank")}
+            >
             Sign In
-          </Button>
+            </Button>
         </div>
       </div>
     </header>

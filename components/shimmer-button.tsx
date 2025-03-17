@@ -1,3 +1,4 @@
+
 import { cn } from "@/lib/utils";
 import React, { type CSSProperties } from "react";
 
@@ -9,6 +10,7 @@ interface ShimmerButtonProps {
   shimmerDuration?: string;
   background?: string;
   className?: string;
+  onClick?: () => void;
   children?: React.ReactNode;
 }
 
@@ -40,6 +42,7 @@ const ShimmerButton = ({
         className,
       )}
       {...props}
+      onClick={props.onClick}
     >
       {/* spark container */}
       <div className="absolute inset-0 overflow-visible [container-type:size]">
